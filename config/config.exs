@@ -7,11 +7,11 @@
 # General application configuration
 use Mix.Config
 
-# config :bitcoin_simulator,
+# config :APIsimulator,
 #   ecto_repos: [BitcoinSimulator.Repo]
 
 # Configures the endpoint
-config :bitcoin_simulator, BitcoinSimulatorWeb.Endpoint,
+config :APIsimulator, BitcoinSimulatorWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "xGgOYZ1QQ0q0gtp+NT34Es+pLLYsNumaRoud8ySU+a1aOdh3xecLkY75n41Qt9aa",
   render_errors: [view: BitcoinSimulatorWeb.ErrorView, accepts: ~w(html json)],
@@ -19,7 +19,7 @@ config :bitcoin_simulator, BitcoinSimulatorWeb.Endpoint,
 
 # Configures Drab
 config :drab, BitcoinSimulatorWeb.Endpoint,
-  otp_app: :bitcoin_simulator
+  otp_app: :APIsimulator
 
 # Configures default Drab file extension
 config :phoenix, :template_engines,

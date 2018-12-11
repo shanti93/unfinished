@@ -1,5 +1,5 @@
 defmodule BitcoinSimulatorWeb.Endpoint do
-  use Phoenix.Endpoint, otp_app: :bitcoin_simulator
+  use Phoenix.Endpoint, otp_app: :APIsimulator
 
   socket "/socket", BitcoinSimulatorWeb.UserSocket,
     websocket: true,
@@ -11,7 +11,7 @@ defmodule BitcoinSimulatorWeb.Endpoint do
   # when deploying your static files in production.
   plug Plug.Static,
     at: "/",
-    from: :bitcoin_simulator,
+    from: :APIsimulator,
     gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 

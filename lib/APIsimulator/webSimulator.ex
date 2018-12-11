@@ -30,7 +30,7 @@ defmodule BitcoinSimulatorWeb do
   def view do
     quote do
       use Phoenix.View,
-        root: "lib/bitcoin_simulator_web/templates",
+        root: "lib/phoenixSimulator/templates",
         namespace: BitcoinSimulatorWeb
 
       # Import convenience functions from controllers

@@ -6,7 +6,7 @@ use Mix.Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
-config :bitcoin_simulator, BitcoinSimulatorWeb.Endpoint,
+config :APIsimulator, BitcoinSimulatorWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -46,13 +46,13 @@ config :bitcoin_simulator, BitcoinSimulatorWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :bitcoin_simulator, BitcoinSimulatorWeb.Endpoint,
+config :APIsimulator, BitcoinSimulatorWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
-      ~r{lib/bitcoin_simulator_web/views/.*(ex)$},
-      ~r{lib/bitcoin_simulator_web/templates/.*(eex|drab)$}
+      ~r{lib/phoenixSimulator/views/.*(ex)$},
+      ~r{lib/phoenixSimulator/templates/.*(eex|drab)$}
     ]
   ]
 
@@ -67,7 +67,7 @@ config :phoenix, :stacktrace_depth, 20
 config :phoenix, :plug_init_mode, :runtime
 
 # Configure your database
-# config :bitcoin_simulator, BitcoinSimulator.Repo,
+# config :APIsimulator, BitcoinSimulator.Repo,
 #   username: "postgres",
 #   password: "postgres",
 #   database: "bitcoin_simulator_dev",
