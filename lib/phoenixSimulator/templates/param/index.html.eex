@@ -2,16 +2,16 @@
   <table class="table">
     <thead>
       <tr>
-        <th scope="col">Parameter Name</th>
-        <th scope="col">Description</th>
-        <th scope="col">Value</th>
-        <th scope="col">Modify</th>
+        <th scope="col">Parameter</th>
+        <th scope="col">Parameter Description</th>
+        <th scope="col">Current Value</th>
+        <th scope="col">Modified Value</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th scope="row">peer_count</th>
-        <td>Number of peers in the simulation</td>
+        <th scope="row">Peer Count</th>
+        <td>Total Count of Peers in BitCoin Simulation</td>
         <td><%= @peer_count %></td>
         <td>
           <%= form_for @conn, BitcoinSimulatorWeb.Router.Helpers.param_path(@conn, :update, :peer_count), [method: :patch], fn f -> %>
@@ -24,8 +24,8 @@
         </td>
       </tr>
       <tr>
-        <th scope="row">trader_percentage</th>
-        <td>Percentage of peers creating transactions</td>
+        <th scope="row">Percentage of traders</th>
+        <td>Percentage of peers that can generate transactions</td>
         <td><%= @trader_percentage %>%</td>
         <td>
           <%= form_for @conn, BitcoinSimulatorWeb.Router.Helpers.param_path(@conn, :update, :trader_percentage), [method: :patch], fn f -> %>
@@ -38,8 +38,8 @@
         </td>
       </tr>
       <tr>
-        <th scope="row">miner_percentage</th>
-        <td>Percentage of peers mining blocks</td>
+        <th scope="row">Percentage of Miners</th>
+        <td>Percentage of Mining blocks</td>
         <td><%= @miner_percentage %>%</td>
         <td>
           <%= form_for @conn, BitcoinSimulatorWeb.Router.Helpers.param_path(@conn, :update, :miner_percentage), [method: :patch], fn f -> %>
@@ -52,8 +52,8 @@
         </td>
       </tr>
       <tr>
-        <th scope="row">peer_auto_trading_interval_range_min</th>
-        <td>Minimum duration before a trader creates a new transction</td>
+        <th scope="row">Minimum auto trading interval</th>
+        <td>Minimum interval before a trader creates transction</td>
         <td><%= @peer_auto_trading_interval_range_min %> ms</td>
         <td>
           <%= form_for @conn, BitcoinSimulatorWeb.Router.Helpers.param_path(@conn, :update, :peer_auto_trading_interval_range_min), [method: :patch], fn f -> %>
@@ -66,8 +66,8 @@
         </td>
       </tr>
       <tr>
-        <th scope="row">peer_auto_trading_interval_range_max</th>
-        <td>Maximum duration before a trader creates a new transction</td>
+        <th scope="row">Minimum auto trading interval</th>
+        <td>Maximum interval before a trader creates transction</td>
         <td><%= @peer_auto_trading_interval_range_max %> ms</td>
         <td>
           <%= form_for @conn, BitcoinSimulatorWeb.Router.Helpers.param_path(@conn, :update, :peer_auto_trading_interval_range_max), [method: :patch], fn f -> %>
@@ -80,8 +80,8 @@
         </td>
       </tr>
       <tr>
-        <th scope="row">target_difficulty_bits</th>
-        <td>Difficulty of mining (munber of leading zeros)</td>
+        <th scope="row">Number of leading zeros</th>
+        <td>Difficulty of mining - Target difficulty bits</td>
         <td><%= @target_difficulty_bits %></td>
         <td>
           <%= form_for @conn, BitcoinSimulatorWeb.Router.Helpers.param_path(@conn, :update, :target_difficulty_bits), [method: :patch], fn f -> %>

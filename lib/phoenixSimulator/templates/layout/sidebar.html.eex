@@ -1,25 +1,30 @@
 <div class="wrapper">
   <nav id="sidebar">
     <div class="sidebar-header">
-      <h3 class="sidebar-header-text">Bitcoin Simulator</h3>
+      <img src = "https://cdn.pixabay.com/photo/2018/02/02/13/51/bitcoin-3125488_960_720.png" style="width:100px;height:100px;"></img>
     </div>
 
     <ul class="list-unstyled components">
+    <li>
+        <a href="/params">Parameters</a>
+      </li>
       <li>
         <a href="/">Dashboard</a>
       </li>
-      <li>
-        <a href="/params">Simulator Parameters</a>
-      </li>
+      <!--
       <li>
         <a href="/interactive_peer">Interactive Peer</a>
       </li>
+      -->
       <li>
-        <a href="/blocks">Blocks</a>
+        <a href="/transactions">
+        Transactions
+        </a>
       </li>
       <li>
-        <a href="/transactions">Transactions</a>
+        <a href="/blocks">Block</a>
       </li>
+
     </ul>
   </nav>
 </div>

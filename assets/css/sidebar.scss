@@ -44,8 +44,8 @@ a:focus {
   left: 0;
   height: 100vh;
   z-index: 999;
-  background: #7386D5;
-  color: #fff;
+  background: rgb(213, 143, 115);
+  color: rgb(10, 9, 9);
   transition: all 0.3s;
 }
 
@@ -55,7 +55,7 @@ a:focus {
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: #6d7fcc;
+  background:rgb(213, 143, 115);
   text-align: center;
 }
 
@@ -65,7 +65,7 @@ a:focus {
 
 #sidebar ul.components {
   padding: 20px 0;
-  border-bottom: 1px solid #47748b;
+  
 }
 
 #sidebar ul p {
@@ -82,8 +82,8 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-  color: #7386D5;
-  background: #fff;
+  color: rgb(246, 246, 248);
+  background: rgb(107, 150, 16);
 }
 
 #sidebar ul li.active>a,
